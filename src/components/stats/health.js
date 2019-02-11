@@ -7,8 +7,9 @@ class Health extends Component {
         <div style={{
             border: "solid 0.4vmin",
             borderRadius: "2vmin",
-            width: "100%",
-            height: "5vmin"
+            width: "90%",
+            height: "3.5vmin",
+            margin: "2vmin"
         }}>
             <div style={{
                 backgroundColor: "red",

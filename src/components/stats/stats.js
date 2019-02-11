@@ -8,10 +8,21 @@ class Stats extends Component {
   render() {
     return (
       <div style={{
-        width: "80%"
+        width: "100%",
+        height: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        alignItems: "center"
       }}>
-        <Score score={this.props.score} />
-        <HighScore score={this.props.highscore} />
+        <div style={{
+          width: "100%",
+          display: "flex",
+          justifyContent: "space-between"
+        }}>
+          <Score score={this.props.score} />
+          <HighScore highscore={this.props.highscore} />
+        </div>
         <Health health={this.props.health} />
       </div>
     );
