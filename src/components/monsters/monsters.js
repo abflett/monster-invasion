@@ -1,16 +1,23 @@
 import React, { Component } from 'react';
-import monster1 from '../../assets/monster1.png';
-import monster2 from '../../assets/monster2.png';
-import monster3 from '../../assets/monster3.png';
-import monster4 from '../../assets/monster4.png';
-import monster5 from '../../assets/monster5.png';
-import monster6 from '../../assets/monster6.png';
-import monster7 from '../../assets/monster7.png';
+
+import "./animations.css";
+
+import SoulStealer from './soulstealer';
+import SoulEater from './souldeater';
+import RipChain from './ripchain';
+import SwordStealer from './swordstealer';
+import DeathEye from './deatheye';
+import Chunky from './chunky';
+import Smile from './smile';
 
 class Monsters extends Component {
     constructor() {
         super();
         this.state = {};
+    }
+
+    moveMonster = () => {
+
     }
    
 
@@ -22,12 +29,24 @@ class Monsters extends Component {
                 height: "100vh",
                 overflow: "hidden"
             }}>
-            <img src={monster1} style={{
-                width: "30vmin"
-            }}/>
+                <SoulStealer x="50vw" y="50vh"/>
+                <SoulEater x="30vw"/>
+                <RipChain y="50vh"/>
+                <SwordStealer />
+                <DeathEye x="70vw" />
+                <Chunky x="35vw" y="30vh"/>
+                <Smile x="70vw" y="70vh" />
             </div>
         );
     }
 }
 
 export default Monsters;
+
+// 1 Soul Stealer - L
+// 2 Soul Eater - L
+// 3 Rip Chain - L
+// 4 Sword Stealer - K
+// 5 Death Eye - K
+// 6 Chunky - K
+// 7 Smile - K
